@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Robotics Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#robot-wars">Robot Wars</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Rocket Robotics Club</h1>
+        <p>Building the Future, One Robot at a Time 🤖</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="card">
+                <h3>🎯 Our Mission</h3>
+                <p>Rocket Robotics Club is dedicated to inspiring innovation and creativity through hands-on robotics education. We provide a platform for students to design, build, and compete with their own robots.</p>
+            </div>
+            <div class="card">
+                <h3>💡 What We Do</h3>
+                <p>From weekly workshops to competitive events, we offer comprehensive robotics training. Members learn programming, mechanical engineering, electronics, and teamwork skills.</p>
+            </div>
+            <div class="card">
+                <h3>🏆 Our Vision</h3>
+                <p>We aim to cultivate the next generation of engineers and innovators by fostering a community where creativity meets technology in an exciting and supportive environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="robot-wars" class="robot-wars">
+        <h2>Robot Wars Competition</h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+            Get ready for the ultimate robotics showdown! Our annual Robot Wars competition features two exciting categories.
+        </p>
+        
+        <div class="competition-types">
+            <div class="competition-card non-destructive">
+                <h3>🛡️ Non-Destructive Battle</h3>
+                <p style="margin-top: 1rem; font-size: 1.1rem;">The Strategy Challenge</p>
+                
+                <ul class="rules-list">
+                    <li><strong>Objective:</strong> Push your opponent's robot out of the circular arena boundary</li>
+                    <li><strong>Arena:</strong> Fixed circular boundary marked clearly on the ground</li>
+                    <li><strong>No Damage Allowed:</strong> Robots must not cause any physical damage to opponents</li>
+                    <li><strong>Pushing Only:</strong> Victory achieved through strategic positioning and pushing power</li>
+                    <li><strong>Match Duration:</strong> 3 minutes per round</li>
+                    <li><strong>Disqualification:</strong> Any intentional damage results in immediate disqualification</li>
+                    <li><strong>Weight Limit:</strong> Maximum 15kg per robot</li>
+                    <li><strong>Victory Conditions:</strong> Robot pushed completely outside the boundary or immobilized for 10 seconds</li>
+                </ul>
+            </div>
+
+            <div class="competition-card destructive">
+                <h3>⚔️ Destructive Battle</h3>
+                <p style="margin-top: 1rem; font-size: 1.1rem;">The Ultimate Showdown</p>
+                
+                <ul class="rules-list">
+                    <li><strong>Objective:</strong> Push your opponent out of the circular arena by any means necessary</li>
+                    <li><strong>Arena:</strong> Same fixed circular boundary as non-destructive category</li>
+                    <li><strong>Damage Allowed:</strong> All forms of mechanical damage are permitted</li>
+                    <li><strong>Fire Prohibited:</strong> Flame weapons, incendiary devices, and fire-based attacks are strictly forbidden</li>
+                    <li><strong>Match Duration:</strong> 5 minutes per round</li>
+                    <li><strong>Weight Limit:</strong> Maximum 25kg per robot</li>
+                    <li><strong>Weapons Allowed:</strong> Spinning blades, hammers, flippers, crushers, saws (no flames)</li>
+                    <li><strong>Victory Conditions:</strong> Opponent pushed out, immobilized for 10 seconds, or disabled</li>
+                    <li><strong>Safety:</strong> All robots must have emergency stop mechanisms</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div id="formMessage" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 5px; text-align: center;"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rocket Robotics Club. All rights reserved.</p>
+        <p>Inspiring Innovation Through Robotics</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
