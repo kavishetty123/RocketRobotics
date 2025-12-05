@@ -1,4 +1,4 @@
-interface FormData {
+interface ContactFormData {
     name: string;
     email: string;
     message: string;
@@ -33,7 +33,7 @@ class RocketRoboticsApp {
     private handleSubmit(e: Event): void {
         e.preventDefault();
 
-        const formData: FormData = {
+        const formData: ContactFormData = {
             name: this.form.elements.name.value,
             email: this.form.elements.email.value,
             message: this.form.elements.message.value
